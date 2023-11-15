@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WiiTravel</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  
+  <body>
+    <!--Barra de navegación-->
+    <nav>
+      <!--Menú hamburguesa-->
+      <!--<input type="checkbox" id="check">-->
+      <button class="btn-nav"></button>
+      <a href="#" class="enlace">
+        <img src="imgs/logo.png" alt="logo" />
+      </a>
+      <h1>WiiTRAVEL</h1>
+      <ul class="botones">
+        <li>
+          <button class="language">
+            <img src="imgs/bandera.jpg" alt="" />
+            <ul>
+              <li>Español</li>
+              <li>English</li>
+              <li>Português</li>
+              <li>Italiano</li>
+              <li>Deutsch</li>
+            </ul>
+          </button>
+        </li>
+        <li>
+          <button class="user">
+            <img src="imgs/usuario.png" alt="" />
+            <a href=""></a>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <img src="/imgs/familiar1.jpg" alt="fondo" />
+      <div class="ElegirDestinos">
+        <form action="#">
+          <h2>Elije los destinos que más te interesen</h2>
+          <label for="origen">Origen</label>
+          <input type="text" id="Origen" name="Origen" />
+          <label for="destino">Destino</label>
+          <input type="text" name="Destino" id="Destino" />
+          <input type="button" name="añadir" id="añadir" />
+          <label for="mas">Añadir más destinos</label>
+
+          <div class="AñadirDestinos">
+            <p>¿No sabes donde? ¡Nosotros te ayudamos!</p>
+            <input type="button" name="europa" id="europa" />
+            <label for="eu">Añadir destinos aleatorios en Europa</label>
+            <input type="button" name="americaNorte" id="americaNorte" />
+            <label for="an"
+              >Añadir destinos aleatorios de América del norte</label
+            >
+            <input type="button" name="americaSur" id="americaSur" />
+            <label for="as"
+              >Añadir destinos aleatorios de América del Sur</label
+            >
+          </div>
+
+          <div class="AdultosNiños">
+            <label for="adultos">Adultos</label>
+            <input type="button" name="adults" id="adults" />
+            <label for="niños">Niños</label>
+            <input type="button" name="niños" id="niños" />
+          </div>
+
+          <div class="Buscar">
+            <input type="submit" name="buscar" id="buscar" value="Buscar" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="anuncio1">
+      <div class="FestivalesTradicionales">
+        <h2>Festivales Tradicionales</h2>
+        <p>¡Descubre los mejores festivales de Europa!</p>
+        <img src="/imgs/festivales.jpg" alt="festis" />
+      </div>
+    </section>
+
+    <section class="anuncio2">
+      <div class="Animales">
+        <h2>¡Trae a tu mascota contigo!</h2>
+        <p>¡Que mejor opción que llevarte a tu mejor amigo!</p>
+        <img src="/imgs/gato.jpg" alt="animals" />
+      </div>
+    </section>
+
+    <header class="cabecera2">
+      <h1>Ofertas de vuelos</h1>
+      <p>¡No te lo pierdas!</p>
+    </header>
+
+    <section class="Vuelos">
+      <div class="destinos">
+        <div class="Alemania">
+          <h2>Alemania</h2>
+          <p>Baden-Wüttemberg</p>
+          <img src="/imgs/oferta vuelo alemania.jpg" alt="alemania" />
+          <p>Precio por persona 20 nov - 27 nov</p>
+          <p>desde 120.99€ 85.99 €</p>
+          <input
+            type="submit"
+            name="reserva"
+            id="reserva"
+            value="¡Reserva ya!"
+          />
+        </div>
+
+        <div class="Canada">
+          <h2>Canadá</h2>
+          <p>Niagara Falls</p>
+          <img src="/imgs/oferta vuelo canada.jpg" alt="canada" />
+          <p>Precio por persona 3 mar - 17 mar</p>
+          <p>desde 1521.99€ 990.99 €</p>
+          <input
+            type="submit"
+            name="reserva"
+            id="reserva"
+            value="¡Reserva ya!"
+          />
+        </div>
+
+        <div class="Argentina">
+          <h2>Argentina</h2>
+          <p>Buenos Aires</p>
+          <img src="/imgs/oferta vuelo argentina.jpg" alt="argentina" />
+          <p>Precio por persona 12 feb - 19 feb</p>
+          <p>desde 1495.99€ 1095.00 €</p>
+          <input
+            type="submit"
+            name="reserva"
+            id="reserva"
+            value="¡Reserva ya!"
+          />
+        </div>
+      </div>
+    </section>
+
+    <header class="cabecera3">
+      <h1>Viajes destacados</h1>
+      <p>Elije tu lugar favorito y nosotros nos encargamos del resto</p>
+    </header>
+
+    <section class="Destacados">
+      <div class="destacados">
+        <div class="Familiar">
+          <p>Familiar</p>
+          <div class="cFamiliar">
+            <img src="/imgs/familiar1.jpg" alt="familiar1" />
+            <img src="/imgs/familiar2.jpeg" alt="familiar2" />
+            <img src="/imgs/familiar3.jpg" alt="familiar3" />
+            <p class="destinos">Italia - Francia - Rumania 7 días</p>
+            <p class="precio">desde 5.595€</p>
+            <input type="submit" name="viaje" id="viaje" value="Ver viaje" />
+            <input
+              type="submit"
+              name="presupuesto"
+              id="presupuesto"
+              value="Pedir presupuesto"
+            />
+          </div>
+        </div>
+
+        <div class="Pareja">
+          <p>Pareja</p>
+          <div class="cPareja">
+            <img src="/imgs/pareja1.jpeg" alt="pareja1" />
+            <img src="/imgs/pareja2.jpg" alt="pareja2" />
+            <img src="/imgs/pareja3.jfif" alt="pareja3" />
+            <p class="destinos">Argentina - Venezuela - Colombia 10 días</p>
+            <p class="precio">desde 2.395€</p>
+            <input type="submit" name="viaje" id="viaje" value="Ver viaje" />
+            <input
+              type="submit"
+              name="presupuesto"
+              id="presupuesto"
+              value="Pedir presupuesto"
+            />
+          </div>
+        </div>
+
+        <div class="Deluxe">
+          <p>Deluxe</p>
+          <div class="cDeluxe">
+            <img src="/imgs/deluxe1.jpg" alt="deluxe1" />
+            <img src="/imgs/deluxe2.png" alt="deluxe2" />
+            <img src="/imgs/deluxe3.jpg" alt="deluxe3" />
+            <p class="destinos">Estados Unidos - Canadá 5 días</p>
+            <p class="precio">desde 6.895€</p>
+            <input type="submit" name="viaje" id="viaje" value="Ver viaje" />
+            <input
+              type="submit"
+              name="presupuesto"
+              id="presupuesto"
+              value="Pedir presupuesto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <img src="/imgs/logo.png" alt="logo" />
+      <div>
+        <h1>WiiTRAVEL</h1>
+      </div>
+      <div class="columna1">
+        <h2>Destinos</h2>
+        <ul>
+          <li>Viajes de novios</li>
+          <li>Viajes en grupos</li>
+          <li>Viajes a Europa</li>
+          <li>Viajes a América del Norte</li>
+          <li>Viajes a América del Sur</li>
+        </ul>
+      </div>
+      <div class="columna2">
+        <img src="/imgs/logo instagram.png" alt="insta" />
+        <img src="/imgs/logo twitter.png.png" alt="twitter" />
+        <img src="/imgs/logo facebook.png.png" alt="fcbk" />
+        <img src="/imgs/logo youtube.png.png" alt="yt" />
+        <ul>
+          <li>Calle Villablanca, 6, Planta 4, Oficina 103</li>
+          <li>28000, Madrid, España</li>
+          <li>Fijo: 910000000</li>
+          <li>Móvil: 600000000</li>
+          <li>info@wiitravel.com</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

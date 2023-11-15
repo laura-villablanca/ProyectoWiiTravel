@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Signika+Negative:wght@300&family=Signika:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/*Barra de navegación*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: #1B664C;
+    height: 70px;
+    width: 100%;
+}
+
+/*Hamburguesa menú*/
+.btn-nav {
+    padding: 0;
+    outline: none;
+    border: none;
+    background: none;
+    width: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-nav::before,
+.btn-nav::after {
+    content: '';
+    display: block;
+    height: 1.7px;
+    background-color: currentColor;
+
+    transform: translateY(-5px);
+}
+
+.btn-nav::before {
+    box-shadow: 0 6px currentColor;
+    transform: translateY(-5px);
+}
+
+.btn-nav::after {
+    box-shadow: 0 6px currentColor;
+    transform: translateY(5px);
+}
+
+/*Logos*/
+.enlace {
+    position:absolute;
+    padding: 45px 55px;
+}
+
+/*Título*/
+h1 {
+    font-family: 'Signika', sans-serif;
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: 5px;
+    font-weight: lighter;
+    font-size: 30px;
+    color: #fff;
+}
+
+nav a img {
+    height: 60px;
+    border-radius: 60px;
+    align-items: center;
+}
+
+nav ul li button img {
+    height: 30px;
+    width: 30px;
+}
