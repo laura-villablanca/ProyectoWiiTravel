@@ -9,9 +9,6 @@
 
 /*Barra de navegación*/
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 20px;
     background: #1B664C;
     height: 70px;
@@ -20,6 +17,9 @@ nav {
 
 /*Hamburguesa menú*/
 .btn-nav {
+    padding: relative;
+    top: -12px;
+    margin-left: -10px;
     padding: 0;
     outline: none;
     border: none;
@@ -51,28 +51,62 @@ nav {
 
 /*Logos*/
 .enlace {
-    position:absolute;
-    padding: 45px 55px;
+    position: absolute;
+    padding: 9.5px;
+    margin-left: 5px;
 }
 
 /*Título*/
 h1 {
     font-family: 'Signika', sans-serif;
     display: inline-block;
-    margin-left: 70px;
+    margin-left: 90px;
     margin-top: 5px;
     font-weight: lighter;
     font-size: 30px;
     color: #fff;
+    margin-top: 20px;
 }
 
 nav a img {
-    height: 60px;
-    border-radius: 60px;
+    height: 50px;
+    border-radius: 50px;
     align-items: center;
 }
 
-nav ul li button img {
+nav ul li div {
     height: 30px;
     width: 30px;
+}
+
+.botones {
+    float: right;
+}
+
+.botones li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.language select {
+    display: none;
+}
+
+.user {
+    background: url('imgs/usuario.png');
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    background-position: center center;
+}
+
+.language {
+    background: url('imgs/bandera1.jpg');
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    background-position: center center;
 }
