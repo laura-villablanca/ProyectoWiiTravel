@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+body, header {
+    background-color: #D2D2D2;
+}
+
 /*Barra de navegación*/
 nav {
     padding: 0 20px;
