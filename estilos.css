@@ -9,7 +9,14 @@
 }
 
 body, header {
+    min-width: 400px;
+    margin: auto;
     background-color: #D2D2D2;
+}
+
+
+.contenedor {
+    margin: 0 auto;
 }
 
 /*Barra de navegación*/
