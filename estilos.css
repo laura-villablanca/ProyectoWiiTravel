@@ -8,7 +8,8 @@
     box-sizing: border-box;
 }
 
-body, header {
+body,
+header {
     font-family: 'Sarabun';
     min-width: 400px;
     margin: auto;
@@ -147,18 +148,18 @@ h1 {
 
 .elegirDestinos {
     width: 100%;
+    margin: 0 auto;
+    max-width: 450px;
     height: 335px;
     background-color: #fff;
     border-radius: 10px;
-    padding: 12px;
-    font-family: 'Sarabun', sans-serif;
+    padding: 15px 22px;
 }
 
-.elegirDestinos h4 {
+.elegirDestinos h3 {
     color: #1d91b6;
-    font-weight: bolder;
     text-align: center;
-    padding: 5px 0 14px;
+    padding: 5px 12px 14px;
 }
 
 .elegirDestinos input[type="button"] {
@@ -182,7 +183,7 @@ h1 {
     color: #fff;
     height: 20px;
     padding-left: 8px;
-    margin: 2px 0 2px ;
+    margin: 2px 0 2px;
 }
 
 .añadirDestinos {
@@ -205,15 +206,24 @@ h1 {
 .anuncios {
     background-color: #d2d2d2;
     height: 85px;
-    font-family: 'Sarabun', sans-serif;
     padding: 15px;
     color: #fff;
+    max-width: 450px;
+    margin: 0 auto;
 }
 
-.festivalesTradicionales, .animales {
+@media (min-width: 465px) {
+    .anuncios {
+        padding: 10px 0;
+    }
+}
+
+.festivalesTradicionales,
+.animales {
     height: 155px;
-    width: 170.5px;
-    position:relative;
+    width: 47%;
+    max-width: 200px;
+    position: relative;
     top: -105px;
 }
 
@@ -232,14 +242,15 @@ h1 {
 }
 
 .festivalesTradicionales {
-    float:left;
+    float: left;
 }
 
 .animales {
     float: right;
 }
 
-.festivalesTradicionales img, .animales img {
+.festivalesTradicionales img,
+.animales img {
     background-size: cover;
     background-position: bottom;
     width: 100%;
@@ -248,10 +259,11 @@ h1 {
     border-bottom-right-radius: 10px;
 }
 
-.festivalesTradicionales p, .animales p {
+.festivalesTradicionales p,
+.animales p {
     font-size: x-small;
     font-weight: 100;
-    
+
 }
 
 /*Ofertas vuelos*/
@@ -305,7 +317,7 @@ button {
     float: left;
     color: #1D91B6;
     font-size: 18px;
-    margin: 0 0 5px 15px ;
+    margin: 0 0 5px 15px;
 }
 
 .oferta h5 {
@@ -323,7 +335,7 @@ button {
 .oferta .fecha {
     font-size: 8px;
     line-height: 1.1;
-    float:left;
+    float: left;
     padding-left: 10px;
     vertical-align: baseline;
 }
