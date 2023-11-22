@@ -220,7 +220,6 @@ h1 {
 
 .festivalesTradicionales,
 .animales {
-    height: 155px;
     width: 47%;
     max-width: 200px;
     position: relative;
@@ -278,14 +277,11 @@ button {
 }
 
 
-.ofertasVuelos {
-    margin-top: 100px;
-}
-
 .ofertasVuelos .ofertasTitulo {
     background-color: #1B664C;
     color: #FFFFFF;
     padding: 20px;
+    align-items: center;
 }
 
 .ofertasTitulo h2 {
