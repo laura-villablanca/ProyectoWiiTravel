@@ -370,3 +370,106 @@ button {
     color: #FFFFFF;
     margin: 5px 25%;
 }
+
+/* Destacados */
+
+.destacados {
+    background-color: #1B664C;
+    color: white;
+  }
+  
+  .destacados h1 {
+    font-family: 'Sarabun', sans-serif;
+    margin-left: 5px;
+    margin-top: 14px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .destacados p {
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: 'Sarabun', sans-serif;
+  }
+  
+  .cont-destacados {
+    background-color: #D2D2D2;
+    width: 100%;
+    margin-top: 10px;
+    padding: 5%;
+  }
+  
+  .cont-destacados p{
+    font-size: 13px;
+  }
+  
+  .cont-destacados p:first-of-type{
+    background-color: #1D91B6;
+    color: white;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 7px;
+    font-weight: bold;
+    position: absolute;
+    margin-left: -5.5%;
+    margin-top: -5%;
+  }
+  
+  .cont-articulo-destacado {
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 2px;
+    color: black;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  
+  .cont-articulo-destacado img{
+    width: 32.5%;
+    height: 70px;
+    margin-left: -4px;
+  }
+  
+  .cont-articulo-destacado img:first-of-type{
+    width: 32.5%;
+    height: 70px;
+    margin-left: 4px;
+  }
+  
+  .cont-articulo-destacado .destacado-float-izq {
+    float: left;
+  }
+  
+  .cont-articulo-destacado .destacado-float-der {
+    float: right;
+    margin-right: 4%;
+  }
+  
+  .cont-articulo-destacado .destacado-float-dis {
+    clear: both;
+  }
+  
+  .cont-articulo-destacado span{
+    font-size: 10px;
+  }
+  
+  .cont-articulo-destacado input[type="submit"] {
+    text-decoration: none;
+    color: white;
+    background-color: #4A829E;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border-style: none;
+    padding: 4px 8px;
+    margin-top: 5px;
+    margin-left: 12%;
+  }
+  
+  .cont-articulo-destacado input[type="submit"]+input[type="submit"] {
+    position: relative;
+    float: right;
+    margin-right: 6.5%;
+  }
