@@ -141,10 +141,11 @@ h1 {
     background-position: center;
     height: 449px;
     width: 100%;
-    padding: 10px;
+    padding: 18px;
 }
 
-/* Formulario */
+/* Formulario */ /* CAMBIOS */
+
 
 .elegirDestinos {
     width: 100%;
@@ -159,20 +160,36 @@ h1 {
 .elegirDestinos h3 {
     color: #1d91b6;
     text-align: center;
-    padding: 5px 12px 14px;
+    padding: 2px 0 10px;
 }
 
 .elegirDestinos input[type="button"] {
     background-color: #989898;
+    border: none;
+    color: #FFF;
     border-radius: 10px;
-    height: 1.em;
+    font-size: 10px;
+    height: 13px;
+    width: 13px;
+}
+
+.selecDestino #añadir{
+    margin-left: 5px;
+}
+
+.ayudaDestino input[type="button"] {
+    background-color: #D2D2D2;
+    outline: solid 1px #5E6A75;
+    font-size: 9px;
+    height: 11px;
+    width: 11px;
 }
 
 .selecDestino label {
     color: black;
     font-size: smaller;
     font-weight: 400;
-    padding: 4px;
+    padding: 3px;
 }
 
 .selecDestino input[type="text"] {
@@ -183,7 +200,13 @@ h1 {
     color: #fff;
     height: 20px;
     padding-left: 8px;
-    margin: 2px 0 2px;
+    font-size: 10px;
+}
+
+.selecDestino input[type="text"]::placeholder{
+    color: #fff;
+    font-size: 10px;
+    font-weight: lighter;
 }
 
 .añadirDestinos {
@@ -193,12 +216,48 @@ h1 {
 .ayudaDestino {
     background-color: #989898;
     font-size: smaller;
+    border-radius: 5px;
+    height: 89px;
 }
 
-.ayudaDestino p {
+.ayudaDestino > p {
     background-color: black;
+    color: #fff;
+    text-align: center;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    padding: 4px 0;
+}
+
+.ayudaDestino > div {
+    padding: 8px 17px;
+    font-size: 10px;
+    color: #fff;
+}
+
+.addDestino p{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.addDestino:not(:last-of-type) {
+    padding-bottom: 5px;
+}
+
+.buscar {
+    width: 80px;
+    margin: -10px auto;
+}
+
+.buscar input[type="submit"]{
+    width: 100%;
+    color: #fff;
+    border-radius: 5px;
+    height: 24px;
+    cursor: pointer;
+    background-color: #4A829E;
+    border: #4A829E solid 1px;
+    font-size: 15px;
 }
 
 /* ANUNCIOS */
@@ -206,7 +265,7 @@ h1 {
 .anuncios {
     background-color: #d2d2d2;
     height: 85px;
-    padding: 15px;
+    padding: 18px;
     color: #fff;
     max-width: 450px;
     margin: 0 auto;
@@ -214,9 +273,10 @@ h1 {
 
 @media (min-width: 465px) {
     .anuncios {
-        padding: 10px 0;
+        padding: 18px 0;
     }
 }
+
 
 .festivalesTradicionales,
 .animales {
