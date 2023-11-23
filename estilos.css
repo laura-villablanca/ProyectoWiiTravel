@@ -333,6 +333,7 @@ h1 {
     top: -105px;
     cursor: pointer;
     color: #fff;
+    height: inherit;
 }
 
 .textoAnuncio {
@@ -447,7 +448,7 @@ button {
     color: #838383;
     text-decoration: line-through;
     float: right;
-    margin: 16px 5px 0 0;
+    margin: 14px 5px 0 0;
     line-height: 1;
     vertical-align: baseline;
 }
@@ -581,11 +582,8 @@ button {
 
 /*Footer*/
 footer {
-    display: inline-block;
-    position: absolute;
     background: #1B664C;
     padding: 18px;
-    width: 102.5%;
 }
 
 /*Logo principal*/
