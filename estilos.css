@@ -68,6 +68,12 @@ nav {
     transform: translateY(5px);
 }
 
+@media (min-width: 1203.56px) {
+    .btn-nav {
+        display: none;
+    }
+}
+
 /*Logos*/
 .enlace {
     position: absolute;
@@ -93,6 +99,44 @@ h1 {
     font-size: 30px;
     color: #fff;
     margin-top: 20px;
+}
+
+/*Botones del Desktop*/
+.botonesVerticales {
+    display: none;
+    margin: 0 0 20px 160px;
+    position: absolute;
+    margin-top: 17px;
+}
+
+.botonesVerticales button {
+    background-color: #1d91b6;
+    height: 38px;
+    width: 170px;
+    margin-right: 17px;
+    border-radius: 0px;
+}
+
+.botonesVerticales button a {
+    color: #fff;
+    font-size: 20px;
+}
+
+@media (min-width: 1473.78px) {
+    .botonesVerticales {
+        display: inline-block;
+    }
+}
+/*Mueve a la izquierda los botones cuando el ancho sea 1800 o menos*/
+@media (max-width: 1800px) {
+    .botonesVerticales {
+        transform: translateX(-30px);
+        margin-left: 180px;
+    }
+
+    .botonesVerticales button {
+        margin-right: 20px;
+    }
 }
 
 /*Usuario e Idioma*/
@@ -138,6 +182,12 @@ h1 {
     margin-left: 5px;
 }
 
+
+/*@media (min-width: 1203.56px) {
+    .botonesVerticales {
+        display: inline-block;
+    }
+}*/
 /* HERO */
 
 .hero {
