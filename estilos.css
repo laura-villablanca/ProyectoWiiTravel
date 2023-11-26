@@ -194,9 +194,22 @@ h1 {
     background-image: url("imgs/fondo.jpg");
     background-size: cover;
     background-position: center;
-    height: 459px;
+    height: 469px;
     width: 100%;
     padding: 18px;
+}
+
+@media (min-width: 1203.56px) {
+    .heroAds {
+        height: 426px;
+    }
+}
+
+@media (min-width: 1473.78px) {
+    .heroAds {
+        height: 469px;
+        padding: 25px;
+    }
 }
 
 /* Formulario */
@@ -236,8 +249,10 @@ h1 {
     padding: 4px 0;
 }
 
-@media (min-width: 1203.56px) {
-    .elegirDestinos h3 {}
+@media (min-width: 1473.78px) {
+    .elegirDestinos h3 {
+        font-size: 23px;
+    }
 }
 
 .elegirDestinos input[type="button"] {
@@ -254,14 +269,7 @@ h1 {
 .selecDestino #añadir {
     margin-left: 5px;
     vertical-align: middle;
-}
-
-.ayudaDestino input[type="button"] {
-    background-color: #D2D2D2;
-    outline: solid 1px #5E6A75;
-    font-size: 9px;
-    height: 11px;
-    width: 11px;
+    border-radius: 2px;
 }
 
 .selecDestino label {
@@ -286,6 +294,42 @@ h1 {
     font-size: 10px;
 }
 
+@media (min-width: 1203.56px) {
+    .selecDestino {
+        padding: 10px 0 10px;
+    }
+
+    .selecDestino :nth-child(4) {
+        margin-bottom: 6px;
+    }
+
+    .selecDestino :last-child {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1473.78px) {
+
+    .selecDestino {
+        padding-top: 16px;
+    }
+
+    .selecDestino label {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .selecDestino input[type="text"],
+    .selecDestino input[type="text"]::placeholder {
+        font-size: 12px;
+    }
+
+    .selecDestino :nth-child(4) {
+        margin-bottom: 14px;
+    }
+
+}
+
 .añadirDestinos {
     padding: 12px 22px;
     max-width: 360px;
@@ -297,6 +341,14 @@ h1 {
     font-size: smaller;
     border-radius: 5px;
     height: 89px;
+}
+
+.ayudaDestino input[type="button"] {
+    background-color: #D2D2D2;
+    outline: solid 1px #5E6A75;
+    font-size: 9px;
+    height: 11px;
+    width: 11px;
 }
 
 .ayudaDestino>p {
@@ -321,6 +373,24 @@ h1 {
 
 .addDestino:not(:last-of-type) {
     padding-bottom: 5px;
+}
+
+@media (min-width: 1203.56px) {
+    .ayudaDestino {
+        height: 92px;
+    }
+}
+
+@media (min-width: 1473.78px) {
+    .ayudaDestino {
+        height: 98px;
+        font-size: 15px;
+    }
+
+    .addDestino p {
+        font-size: 11px;
+    }
+
 }
 
 .adultosNiños {
@@ -363,6 +433,20 @@ h1 {
     font-size: 10px;
 }
 
+@media (min-width: 1203.56px) {
+    .adultosNiños {
+        padding: 20px 0 22px;
+    }
+}
+
+@media (min-width: 1473.78px) {
+
+    .adultos :first-child,
+    .niños :first-child {
+        font-size: 16px;
+    }
+}
+
 .buscar {
     width: 80px;
     margin: 0 auto;
@@ -380,9 +464,27 @@ h1 {
     cursor: pointer;
 }
 
+@media (min-width: 1203.56px) {
+
+    .buscar input[type="submit"] {
+        height: 27px;
+    }
+
+}
+
+@media (min-width: 1473.78px) {
+    .buscar {
+        width: 99px;
+    }
+
+    .buscar input[type="submit"] {
+        height: 32px;
+        font-size: 18px;
+    }
+
+}
+
 /* ANUNCIOS */
-
-
 
 .anuncios {
     height: 85px;
@@ -442,7 +544,10 @@ h1 {
     .festivalesTradicionales,
     .animales {
         width: 173px;
-        clear: both;
+    }
+
+    .animales {
+        left: 5px;
     }
 }
 
@@ -453,11 +558,9 @@ h1 {
         max-width: 220px;
         width: 220px;
         margin-bottom: 15px;
-        clear: both;
     }
 
     .animales {
-        position: relative;
         left: 50px;
     }
 }
@@ -475,8 +578,6 @@ h1 {
     font-size: 0.8em;
     padding-bottom: 4px;
 }
-
-
 
 .festivalesTradicionales img,
 .animales img {
