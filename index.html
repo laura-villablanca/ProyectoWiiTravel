@@ -36,73 +36,75 @@
   </div>
 
   <!--HERO-->
-  <section class="hero">
-    <div class="elegirDestinos">
-      <form action="#">
-        <h3>Elije los destinos que más te interesen</h3>
-        <div class="selecDestino">
-          <label for="origen">Origen</label>
-          <input type="text" id="Origen" name="Origen" placeholder="Origen" />
-          <label for="destino">Destino</label>
-          <input type="text" name="Destino" id="Destino" placeholder="Destino" />
-          <input type="button" value="+" name="añadir" id="añadir" />
-          <label for="mas">Añadir más destinos</label>
-        </div>
+  <section class="heroAds">
+    <div class="hero">
+      <div class="elegirDestinos">
+        <form action="#">
+          <h3>Elije los destinos que más te interesen</h3>
+          <div class="selecDestino">
+            <label for="origen">Origen</label>
+            <input type="text" id="Origen" name="Origen" placeholder="Origen" />
+            <label for="destino">Destino</label>
+            <input type="text" name="Destino" id="Destino" placeholder="Destino" />
+            <input type="button" value="+" name="añadir" id="añadir" />
+            <label for="mas">Añadir más destinos</label>
+          </div>
 
-        <div class="añadirDestinos">
-          <div class="ayudaDestino">
-            <p>¿No sabes donde? ¡Nosotros te ayudamos!</p>
-            <div>
-              <div class="addDestino">
-                <input type="button" value="+" name="europa" id="europa" />
-                <p>Añadir destinos aleatorios en Europa</p>
+          <div class="añadirDestinos">
+            <div class="ayudaDestino">
+              <p>¿No sabes donde? ¡Nosotros te ayudamos!</p>
+              <div>
+                <div class="addDestino">
+                  <input type="button" value="+" name="europa" id="europa" />
+                  <p>Añadir destinos aleatorios en Europa</p>
+                </div>
+                <div class="addDestino">
+                  <input type="button" value="+" name="americaNorte" id="americaNorte" />
+                  <p>Añadir destinos aleatorios de América del norte</p>
+                </div>
+                <div class="addDestino">
+                  <input type="button" value="+" name="americaSur" id="americaSur" />
+                  <p>Añadir destinos aleatorios de América del Sur</p>
+                </div>
               </div>
-              <div class="addDestino">
-                <input type="button" value="+" name="americaNorte" id="americaNorte" />
-                <p>Añadir destinos aleatorios de América del norte</p>
+            </div>
+            <div class="adultosNiños">
+              <div class="adultos">
+                <p>Adultos</p>
+                <input type="button" value="-" name="adults" id="adults" />
+                <p class="contNumero">1</p>
+                <input type="button" value="+" name="adults" id="adults" />
               </div>
-              <div class="addDestino">
-                <input type="button" value="+" name="americaSur" id="americaSur" />
-                <p>Añadir destinos aleatorios de América del Sur</p>
+              <div class="niños">
+                <p>Niños</p>
+                <input type="button" value="-" name="adults" id="adults" />
+                <p class="contNumero">0</p>
+                <input type="button" value="+" name="niños" id="niños" />
               </div>
             </div>
           </div>
-          <div class="adultosNiños">
-            <div class="adultos">
-              <p>Adultos</p>
-              <input type="button" value="-" name="adults" id="adults" />
-              <p class="contNumero">1</p>
-              <input type="button" value="+" name="adults" id="adults" />
-            </div>
-            <div class="niños">
-              <p>Niños</p>
-              <input type="button" value="-" name="adults" id="adults" />
-              <p class="contNumero">0</p>
-              <input type="button" value="+" name="niños" id="niños" />
-            </div>
+          <div class="buscar">
+            <input type="submit" name="buscar" id="buscar" value="Buscar" />
           </div>
-        </div>
-        <div class="buscar">
-          <input type="submit" name="buscar" id="buscar" value="Buscar" />
-        </div>
-      </form>
-    </div>
-  </section>
-  <!--Anuncios-->
-  <section class="anuncios">
-    <div class="festivalesTradicionales">
-      <div class="textoAnuncio">
-        <h5>Festivales Tradicionales</h5>
-        <p>¡Descubre los mejores festivales de Europa!</p>
+        </form>
       </div>
-      <img src="imgs/festivales.jpg" alt="festis" />
     </div>
-    <div class="animales">
-      <div class="textoAnuncio">
-        <h5>¡Trae a tu mascota contigo!</h5>
-        <p>¡Que mejor opción que llevarte a tu mejor amigo!</p>
+    <!--Anuncios-->
+    <div class="anuncios">
+      <div class="festivalesTradicionales">
+        <div class="textoAnuncio">
+          <h5>Festivales Tradicionales</h5>
+          <p>¡Descubre los mejores festivales de Europa!</p>
+        </div>
+        <img src="imgs/festivales.jpg" alt="festis" />
       </div>
-      <img src="imgs/gato.jpg" alt="animals" />
+      <div class="animales">
+        <div class="textoAnuncio">
+          <h5>¡Trae a tu mascota contigo!</h5>
+          <p>¡Que mejor opción que llevarte a tu mejor amigo!</p>
+        </div>
+        <img src="imgs/gato.jpg" alt="animals" />
+      </div>
     </div>
   </section>
 

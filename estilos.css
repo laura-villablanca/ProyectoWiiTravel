@@ -190,7 +190,7 @@ h1 {
 }*/
 /* HERO */
 
-.hero {
+.heroAds {
     background-image: url("imgs/fondo.jpg");
     background-size: cover;
     background-position: center;
@@ -204,17 +204,40 @@ h1 {
 .elegirDestinos {
     width: 100%;
     margin: 0 auto;
-    max-width: 450px;
+    max-width: 351px;
     height: 345px;
     background-color: #fff;
     border-radius: 10px;
     padding: 15px 22px;
 }
 
+@media (min-width: 1203.56px) {
+
+    .elegirDestinos {
+        float: left;
+        height: 385px;
+        margin-right: 18px;
+    }
+}
+
+@media (min-width: 1473.78px) {
+    .elegirDestinos {
+        float: left;
+        height: 420px;
+        max-width: 450px;
+        margin-right: 18px;
+    }
+}
+
 .elegirDestinos h3 {
     color: #1d91b6;
     text-align: center;
-    padding: 2px 0 10px;
+    margin: 0 -2px;
+    padding: 4px 0;
+}
+
+@media (min-width: 1203.56px) {
+    .elegirDestinos h3 {}
 }
 
 .elegirDestinos input[type="button"] {
@@ -359,31 +382,84 @@ h1 {
 
 /* ANUNCIOS */
 
+
+
 .anuncios {
-    background-color: #d2d2d2;
     height: 85px;
-    padding: 18px;
     color: #fff;
-    max-width: 450px;
+    max-width: 351px;
     margin: 0 auto;
+    padding: 120px 0;
 }
 
 @media (min-width: 465px) {
     .anuncios {
-        padding: 18px 0;
+        padding: 120px 0;
     }
 }
 
+@media (min-width: 1203.56px) {
+    .anuncios {
+        height: 193px;
+        padding: 24px 0;
+        max-width: 169px;
+        float: left;
+        position: relative;
+        top: 88px;
+    }
+}
+
+@media (min-width: 1473.78px) {
+    .anuncios {
+        padding: 18px 0;
+        height: 205px;
+        margin-left: 26px;
+    }
+}
 
 .festivalesTradicionales,
 .animales {
-    width: 47%;
+    width: 168px;
     max-width: 200px;
     position: relative;
     top: -105px;
     cursor: pointer;
     color: #fff;
     height: inherit;
+    margin: 0 auto;
+}
+
+.festivalesTradicionales {
+    float: left;
+}
+
+.animales {
+    float: right;
+}
+
+@media (min-width: 1203.56px) {
+
+    .festivalesTradicionales,
+    .animales {
+        width: 173px;
+        clear: both;
+    }
+}
+
+@media (min-width: 1473.78px) {
+
+    .festivalesTradicionales,
+    .animales {
+        max-width: 220px;
+        width: 220px;
+        margin-bottom: 15px;
+        clear: both;
+    }
+
+    .animales {
+        position: relative;
+        left: 50px;
+    }
 }
 
 .textoAnuncio {
@@ -400,13 +476,7 @@ h1 {
     padding-bottom: 4px;
 }
 
-.festivalesTradicionales {
-    float: left;
-}
 
-.animales {
-    float: right;
-}
 
 .festivalesTradicionales img,
 .animales img {
@@ -416,6 +486,22 @@ h1 {
     height: 100px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+@media (min-width: 1203.56px) {
+
+    .festivalesTradicionales img,
+    .animales img {
+        height: 120px;
+    }
+}
+
+@media (min-width: 1473.78px) {
+
+    .festivalesTradicionales img,
+    .animales img {
+        height: 140px;
+    }
 }
 
 .textoAnuncio p {
