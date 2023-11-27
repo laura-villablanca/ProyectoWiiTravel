@@ -7,6 +7,14 @@
     list-style: none;
     box-sizing: border-box;
 }
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
 
 .clearfix {
     clear: both;
@@ -26,10 +34,12 @@ header {
     margin: 0 auto;
 }
 
+
 @media(min-width: 1204px) {
     body,
     header {
         min-width: 1445px;
+        max-height: 850px;
     }
 }
 
@@ -737,6 +747,11 @@ button {
     display: none;
 }
 
+.desktopOferta {
+    display: none;
+    max-width: 1204px;
+}
+
 @media(min-width:0px) and (max-width:1203.55px) {
     .ofertasVuelos .ofertasTitulo {
         margin-top: 80.5px;
@@ -927,7 +942,6 @@ button {
     background-color: #1B664C;
     color: white;
 	clear: both;
-	transform: translateY(-470px);
 }
 
 .destacados h2 {
@@ -1016,7 +1030,11 @@ button {
     }
 }
 
-@media (min-width: 1166px) {
+@media (min-width: 1204px) {
+
+    .destacados {
+        transform: translateY(-428px);
+    }
 
     .cont-destacados{
         padding: 1% 0 1% 2.5%;
@@ -1055,7 +1073,7 @@ button {
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1473px) {
 
     .cont-articulo-destacado {
         width: 30%;
@@ -1134,7 +1152,6 @@ button {
 footer {
     background: #1B664C;
     padding: 18px;
-	transform: translateY(-470px);
 }
 
 /*Logo principal*/
@@ -1194,6 +1211,8 @@ footer .columnas_footer ul li {
 }
 
 @media (max-width: 1473.77px) {
+
+
     footer .logosRRSS {
         display: none;
     }
@@ -1209,9 +1228,16 @@ footer .columnas_footer ul li {
     }
 }
 
+@media(min-width: 1204px) {
+    footer {
+        transform: translateY(-427px);
+    }
+}
+
 @media (min-width: 1473.77px) {
     footer {
         height: 255px; 
+        transform: translateY(-427px);
     }
 
     footer .logo_principal {
