@@ -926,8 +926,6 @@ button {
 .destacados {
     background-color: #1B664C;
     color: white;
-	clear: both;
-	transform: translateY(-470px);
 }
 
 .destacados h1 {
@@ -1017,6 +1015,10 @@ button {
 }
 
 @media (min-width: 1166px) {
+    .destacados{
+        clear: both;
+	    transform: translateY(-470px);
+    }
 
     .cont-destacados{
         padding: 1% 0 1% 2.5%;
@@ -1134,7 +1136,12 @@ button {
 footer {
     background: #1B664C;
     padding: 18px;
-	transform: translateY(-470px);
+}
+
+@media (min-width: 1166px) {
+    footer{
+        transform: translateY(-470px);
+    }
 }
 
 /*Logo principal*/
