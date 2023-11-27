@@ -1122,6 +1122,8 @@ button {
 
 .cont-articulo-destacado .destacado-float-dis {
     clear: both;
+    width: fit-content;
+    
 }
 
 .cont-articulo-destacado span {
