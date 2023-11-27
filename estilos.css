@@ -1033,7 +1033,7 @@ button {
 @media (min-width: 1204px) {
 
     .destacados {
-        transform: translateY(-428px);
+        transform: translateY(-427px);
     }
 
     .cont-destacados{
@@ -1074,6 +1074,10 @@ button {
 }
 
 @media (min-width: 1473px) {
+
+    .destacados {
+        transform: translateY(-471px);
+    }
 
     .cont-articulo-destacado {
         width: 30%;
@@ -1237,7 +1241,7 @@ footer .columnas_footer ul li {
 @media (min-width: 1473.77px) {
     footer {
         height: 255px; 
-        transform: translateY(-427px);
+        transform: translateY(-470px);
     }
 
     footer .logo_principal {
